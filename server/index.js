@@ -9,7 +9,9 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://ai-assistant-frontend-mk42.onrender.com"
+}));
 app.use(express.json());
 
 // Routes
