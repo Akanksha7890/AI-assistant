@@ -13,7 +13,7 @@ const Signup = () => {
             alert("Account created successfully! Please log in.");
             navigate('/login');
         } catch (err) {
-            alert(err.response?.data?.msg || "Galti ho gayi!");
+            alert(err.response?.data?.msg || "Something went wrong!");
         }
     };
 
@@ -66,7 +66,7 @@ const Signup = () => {
                 </button>
 
                 <p className="text-gray-400 mt-6 text-center text-sm">
-                    Pehle se account hai? <Link to="/login" className="text-purple-400 hover:underline">Login</Link>
+                   Already have an account? <Link to="/login" className="text-purple-400 hover:underline">Login</Link>
                 </p>
             </form>
         </div>
