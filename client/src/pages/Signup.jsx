@@ -10,7 +10,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             await axios.post('https://assistant-backend-t4qo.onrender.com/api/auth/signup', formData);
-            alert("Account ban gaya! Ab login karo.");
+            alert("Account created successfully! Please log in.");
             navigate('/login');
         } catch (err) {
             alert(err.response?.data?.msg || "Galti ho gayi!");
