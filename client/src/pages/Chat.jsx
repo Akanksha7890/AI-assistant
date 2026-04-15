@@ -83,7 +83,7 @@ const Chat = () => {
         setPrompt(''); 
 
         try {
-            const res = await axios.post('http://localhost:5000/api/ai/ask', { prompt: currentPrompt });
+            const res = await axios.post('https://assistant-backend-t4qo.onrender.com', { prompt: currentPrompt });
             const aiAnswer = res.data.answer;
             setResponse(aiAnswer);
 
