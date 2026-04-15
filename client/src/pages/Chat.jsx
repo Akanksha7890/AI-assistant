@@ -125,7 +125,7 @@ const Chat = () => {
                     type="text" value={prompt}
                     onChange={(e) => setPrompt(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && handleAsk()}
-                    placeholder={isListening ? "Listening... (Bolna band karke Send karein)" : "Start typing..."}
+                    placeholder={isListening ? "Listening..." : "Start typing..."}
                     className={`w-full p-6 pr-36 rounded-2xl bg-black/40 border transition-all text-lg outline-none ${isListening ? 'border-purple-500 ring-2 ring-purple-500/20' : 'border-white/10'}`}
                 />
                 <div className="absolute right-3 top-1/2 -translate-y-1/2 flex gap-2">
