@@ -9,7 +9,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/auth/signup', formData);
+            await axios.post('https://assistant-backend-t4qo.onrender.com/api/auth/signup', formData);
             alert("Account ban gaya! Ab login karo.");
             navigate('/login');
         } catch (err) {
